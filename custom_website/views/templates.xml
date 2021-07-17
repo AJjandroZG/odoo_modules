@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Custom model">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/custom_website/static/src/js/website.js"/>
+                <link rel="stylesheet" type="text/scss" href="/custom_website/static/src/css/styles.css"/>
+            </xpath>
+        </template>
+
+        <template id="index" name="Custom template">
+            <t t-call="website.layout">
+                <t t-set="n1" t-value="1"/>
+                <t t-set="n2" t-value="2"/>
+                <t t-set="res" t-value="0"/>
+                <t t-log="n1"/>
+                <div class="res">
+                    <t t-esc="n1"/>
+                    <t t-esc="n2"/>
+                    <t t-esc="res"/>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

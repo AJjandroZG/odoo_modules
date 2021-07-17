@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+    <record id="moldeo_custom_footer" model="ir.ui.view">
+      <field name="name">moldeo.footer</field>
+      <field name="inherit_id" ref="website.footer_custom" />
+      <field name="arch" type="xml">
+        <xpath expr="//div[@id='footer']" position="replace">
+          <p>Moldeo Footer</p>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

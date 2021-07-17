@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_extra_addons/library_extra_addons/library,extra_addons/library.extra_addons/library,model_extra_addons/library_extra_addons/library,,1,0,0,0

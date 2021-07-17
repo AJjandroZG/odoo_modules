@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+        id="report_custom"
+        string="Reporte personalizado"
+        model="sale.order" report_type="qweb-pdf"
+        name="custom_website.report_custom_template" />
+
+        <template id="report_custom_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="header">
+                        Mi Empresa / Logo
+                    </div>
+                    <div class="page">
+                        <h1>Esto es un reporte</h1>
+                        <p>personalizado en odoo</p>
+                    </div>
+                    <div class="footer">
+                        <small>Esto es mi footer</small>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

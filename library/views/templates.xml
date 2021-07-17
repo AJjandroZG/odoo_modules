@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="custom_view_custom" model="ir.ui.view">
+            <field name="name">custom.view.custom</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="inside">
+                    <group>
+                        <field name="fiels_Many2one" />
+                        <field name="fiels_onChange" />
+                        <field name="fiels_bool" />
+                        <field name="fiels_char" />
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
